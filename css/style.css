@@ -6,8 +6,8 @@
 }
 
 html {
+    background-color: #1f1f14;
     transition: 2s;
-    
 }
 
 /* .site-wrapper { */
@@ -291,7 +291,7 @@ header:after {
 
 .section-wrapper {
     width: 80%;
-    height: 500px;
+    padding-bottom: 25px;
     background: black;
     opacity: .8;
     border: 1px solid white;
