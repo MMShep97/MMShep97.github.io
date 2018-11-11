@@ -21,6 +21,9 @@ function backgroundSequence() {
         setTimeout(function () {
             document.documentElement.style.background = "url(" + base + imageArr[k] + ") no-repeat center center fixed";
             document.documentElement.style.backgroundSize = "cover";
+            document.documentElement.style.backgroundColor = "#1f1f14";
+            document.documentElement.style.backgroundBlendMode = "screen";
+
             if ((k + 1) === imageArr.length) {
                 setTimeout(function () {
                     backgroundSequence()
