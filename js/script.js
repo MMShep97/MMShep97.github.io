@@ -37,3 +37,19 @@ function backgroundSequence() {
 
 backgroundSequence();
 /*******************************************************************************************************************************/
+
+$(document).ready(function () {
+    var scroll_start = 0;
+    var startChange = $("#about-scrollto");
+    var offset = startChange.offset();
+
+    if (startChange.length) {
+        $(document).scroll(function () {
+            scroll_start = $(this).scrollTop();
+
+            if (scroll_start = offset.top) {
+                $(".logo-wrapper").css("opacity", ".2");
+            }
+        })
+    }
+})
