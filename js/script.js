@@ -14,6 +14,23 @@ imageArr.forEach(function (img) {
 // caches images, avoiding white flash between background replacements
 
 
+
+// $(document).ready(function () {
+//     var scroll_start = 0;
+//     var startChange = $("#about-scrollto");
+//     var offset = startChange.offset();
+
+//     if (startChange.length) {
+//         $(document).scroll(function () {
+//             scroll_start = $(this).scrollTop();
+
+//             if (scroll_start == offset.top) {
+//                 $(".logo-wrapper").css("opacity", ".2");
+//             }
+//         })
+//     }
+// })
+
 function backgroundSequence() {
     window.clearTimeout();
     var k = 0;
@@ -24,6 +41,7 @@ function backgroundSequence() {
             document.documentElement.style.backgroundColor = "#1f1f14";
             document.documentElement.style.backgroundBlendMode = "screen";
 
+            //start over
             if ((k + 1) === imageArr.length) {
                 setTimeout(function () {
                     backgroundSequence()
@@ -37,19 +55,13 @@ function backgroundSequence() {
 
 backgroundSequence();
 /*******************************************************************************************************************************/
+/*
+function scrollToVisible() {
+    var about_scrollto = document.getElementById("about-scrollto");
 
-$(document).ready(function () {
-    var scroll_start = 0;
-    var startChange = $("#about-scrollto");
-    var offset = startChange.offset();
+    about_scrollto.scrollIntoView({
+        behavior: "smooth",
+    });
 
-    if (startChange.length) {
-        $(document).scroll(function () {
-            scroll_start = $(this).scrollTop();
-
-            if (scroll_start = offset.top) {
-                $(".logo-wrapper").css("opacity", ".2");
-            }
-        })
-    }
-})
+}
+*/

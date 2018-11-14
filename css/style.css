@@ -280,17 +280,13 @@ header:after {
 .section-header {
     font-size: 20px;
     width: 180px;
-    margin-top: 60px;
+    margin-top: 10%;
     font-weight: bold;
     letter-spacing: 8px;
     border-bottom: 1px solid white;
     border-radius: 5%;
     color: white;
     padding-left: 10px;
-}
-
-.section-header:hover {
-    background-color: grey;
 }
 
 .section-wrapper {
@@ -311,10 +307,13 @@ header:after {
     font-family: 'Anton', sans-serif;
 }
 
+
+
+/* 
 #about-scrollto::before {
     display: block;
     content: " ";
-    height: 85px;
+    height: 200px;
 
     visibility: hidden;
     pointer-events: none;
@@ -345,7 +344,7 @@ header:after {
 
     visibility: hidden;
     pointer-events: none;
-}
+} */
 
 /* .front-page-main-container {
 
